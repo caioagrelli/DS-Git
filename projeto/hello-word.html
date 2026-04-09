@@ -152,6 +152,7 @@
     transition: color .2s;
   }
   .footer a:hover { color: #e74c3c; }
+  .footer strong { color: var(--text); }
 </style>
 </head>
 <body>
@@ -184,7 +185,9 @@
 <div class="keyboard" id="keyboard"></div>
 
 <div class="footer">
-  Desenvolvido por <a href="https://github.com/caioagrelli" target="_blank">Caio Agrelli</a> 🚀
+  Desenvolvido por <a href="https://github.com/caioagrelli" target="_blank">Caio Agrelli</a> 🚀<br>
+  Disciplina de Desenvolvimento de Software — 2025<br>
+  Professores: <strong>Kiev Gama</strong> & <strong>Vinicius Cardoso</strong>
 </div>
 
 <div class="overlay" id="overlay">
@@ -288,7 +291,7 @@ document.addEventListener('keydown', e => {
   const ch = e.key.toLowerCase();
   if (/^[a-z]$/.test(ch)) guess(ch);
 });
- 
+
 init();
 </script>
 </body>
