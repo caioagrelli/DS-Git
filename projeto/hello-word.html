@@ -138,6 +138,20 @@
   .btn-restart:hover { transform: scale(1.06); }
 
   .errors-count { font-size: .85rem; color: var(--err-text); margin-bottom: 10px; }
+
+  .footer {
+    margin-top: 30px;
+    font-size: .85rem;
+    color: var(--hint-text);
+    text-align: center;
+  }
+  .footer a {
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color .2s;
+  }
+  .footer a:hover { color: #e74c3c; }
 </style>
 </head>
 <body>
@@ -145,7 +159,7 @@
 <button class="theme-toggle" onclick="toggleTheme()" title="Mudar tema">🌙</button>
 
 <h1>Jogo da Forca</h1>
-<div class="hint">Dica: <strong>Melhores professores de DS do CIN</strong></div>
+<div class="hint">Dica: <strong>Melhores professores de DS</strong></div>
 
 <div class="game-area">
   <svg class="hangman" viewBox="0 0 150 200">
@@ -168,6 +182,10 @@
 
 <p class="errors-count">Erros: <span id="errCount">0</span> / 6</p>
 <div class="keyboard" id="keyboard"></div>
+
+<div class="footer">
+  Desenvolvido por <a href="https://github.com/caioagrelli" target="_blank">Caio Agrelli</a> 🚀
+</div>
 
 <div class="overlay" id="overlay">
   <div class="overlay-box">
